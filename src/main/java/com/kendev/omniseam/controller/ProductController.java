@@ -17,7 +17,7 @@ public class ProductController {
         this.productRepository = productRepository;
     }
 
-    @GetMapping
+    @GetMapping()
     public ResponseEntity getAllProducts(){
         return ResponseEntity.ok(this.productRepository.findAll());
     }
