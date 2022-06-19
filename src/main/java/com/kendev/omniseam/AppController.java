@@ -1,4 +1,4 @@
-package com.kendev.omniseam.controller;
+package com.kendev.omniseam;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
