@@ -23,11 +23,11 @@ public class UserRepositoryTest {
     @Test
     public void testCreateUser(){
         User user = new User();
-        user.setEmail("TheTrueKen@icloud.com");
-        user.setUsername("Ken");
-        user.setFirstName("Kenderson");
-        user.setLastName("Augustin");
-        user.setPassword("Kentheman12");
+        user.setEmail("Omniseam@omniseam.com");
+        user.setUsername("Omniseam");
+        user.setFirstName("Omni");
+        user.setLastName("Seam");
+        user.setPassword("password");
 
         User savedUser = repo.save(user);
 
