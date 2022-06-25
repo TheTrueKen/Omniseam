@@ -1,0 +1,205 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav { 
+    padding: 2%;
+    background-color: #282A35 ;
+    box-shadow: 0px 5px 5px darkgrey;
+ }
+ 
+ nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block; 
+    text-align: right;
+}
+
+nav ul li {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline;
+    margin-right: 2%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+}
+
+ .StartPageContainer{
+ 	background-image: url('../Images/flushed-face_1f633.png');
+ 	width: auto;
+ 	height: 800px;
+ 	overflow: auto;
+ }
+
+#StartPageContent{
+ 	text-align: center;
+ 	background-color: rgb(45,45,45);
+ 	width: 75%;
+ 	height: 75%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 115px;
+
+ }
+
+ .PseudoNav {
+ 	background-color: darkgrey;
+ }
+
+.Insigna{
+	text-align: left;
+	font-size: 225%;
+}
+
+#FriendsUl{
+	font-size: 24px; 
+ 	text-align: center;
+ 	background-color: rgb(64,64,64);
+ 	overflow: auto;
+ 	color: rgb(192,192,192);
+ 	position: absolute;
+ 	padding-right: 5px;
+}
+
+
+.NavButtons{
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#PassWallForm {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+#PassWallForm h1{
+	font-size: 350%;
+}
+
+#PassWallForm h3{
+	text-align: center;
+}
+
+#PassWallForm form {
+	text-align: center;
+}
+
+.NavHeader{
+	font-size: 24px;
+ 	float: right;
+}
+
+.SignUpForm{
+	padding: 1%;
+	font-size: 145%;
+	color: white;
+	background-color: rgb(51,51,51);
+	display: inline-block;
+}
+
+#SystemNotification{
+	text-align: center;
+	width: auto;
+	height: 35px;
+	font-size: 175%;
+	font-family: sans-serif;
+	background-color: blue;
+	margin-bottom: 3.5px;
+	display: none;
+	
+}
+
+
+#logo{
+    float: left;
+    font-size: 18px;
+}
+
+#logo a{
+    color: seashell;
+}
+
+#searchWrapper a{
+    padding: 5px 8px 5px 8px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+#searchWrapper a:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#searchWrapper a img{
+    margin: 0;
+    padding: 0;
+    width:16px;
+    height: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+}
+
+#searchWrapper a input{
+    /* display: none; */ /* used in now depreciated function hideShowSearch */
+    font-size: 16px;
+    background-color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    position:relative;
+    width: 0;
+    /* new iteration of tweening for searchBar v1 */
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+/* new iteration of tweening for searchBar v1.5*/
+
+#searchWrapper a input.expanded {
+    width: 55%; 
+    visibility: visible;
+    opacity: 1;
+}
+
+#searchWrapper a input:focus{
+    outline-offset: none;
+}
+
+#searchIcon{
+    border-style:solid;
+    border-width:1px;
+    border-color:white;
+}
+
+.notificationBar{
+    display: block;
+    margin:0; 
+    background-color:#f71010;
+    color:white;
+    text-align: center;
+}
+
+.notifiCont{
+    font-size: 30px;
+    padding:5px; 
+}

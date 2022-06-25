@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link th:href="@{/css/main.css}" rel="stylesheet"/>
         <title>Home - Omniseam</title>
     </head>
     <body>
+        <div id= "SystemNotification">Testing</div>
+        <nav>
+            <ul>
+                <li id="logo">
+                    <a href = "#">Omniseam</a>
+                </li>
+                <li id="searchWrapper">
+                    <a id="searchIcon">
+                        <input type="text"  class = "searchBar" placeholder="Search" onfocus="highlightSwap('searchIcon','searchBar', true)" onblur="highlightSwap('searchIcon','searchBar', false)">
+                         <img onclick ="tweenSearch('searchBar')" th:src="@{/Images/magnifying-glass-solid.svg}" />
+                    </a>
+                </li>
+                <li id = "SignUp">
+                    <a href = "#">SignUp</a>
+                </li>
+                <li id = "Login">
+                    <a href = "#">Login</a>
+                </li>
+                <li id = "Home">
+                    <a href = "#">Home</a>
+                </li>
+                <li id = "Logout">
+                    <a href = "?a=Logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <div class = "notificationBar">
+            <div class = "notifiCont">Under Contruction</div>
+        </div>    
         <h1>Welcome to the new Omniseam Site</h1>
         <h2>Made by Blenderson!</h2>
+
     </body>
+    <footer>
+        <script type="text/javascript" th:src="@{/js/main.js}"></script>
+    </footer>
 </html>
