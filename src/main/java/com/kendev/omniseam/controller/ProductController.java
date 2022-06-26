@@ -1,7 +1,7 @@
 package com.kendev.omniseam.controller;
 
-import com.kendev.omniseam.repository.ProductRepository;
 import com.kendev.omniseam.model.Product;
+import com.kendev.omniseam.repository.ProductRepository;
 
 import java.util.List;
 
