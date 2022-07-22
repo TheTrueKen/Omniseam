@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link th:href="@{/CSS/main.css}" rel="stylesheet"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home - Omniseam</title>
+        <link th:href="@{/CSS/main.css}" rel="stylesheet"/>
     </head>
     <body>
         <div id= "SystemNotification">Testing</div>
@@ -14,20 +16,27 @@
                 <li id="searchWrapper">
                     <a id="searchIcon">
                         <input type="text"  class = "searchBar" placeholder="Search" onfocus="highlightSwap('searchIcon','searchBar', true)" onblur="highlightSwap('searchIcon','searchBar', false)">
-                         <img onclick ="tweenSearch('searchBar')" th:src="@{/Images/magnifying-glass-solid.svg}" />
+                         <img onclick ="tweenSearch('searchBar')" th:src="@{/Images/magnifying-glass-solid.svg}" alt="magnifying-glass-solid"/>
                     </a>
                 </li>
-                <li id = "SignUp">
+                <li id = "SignUp" class ="navLinks">
                     <a href = "#">SignUp</a>
                 </li>
-                <li id = "Login">
+                <li id = "Login" class ="navLinks">
                     <a href = "#">Login</a>
                 </li>
-                <li id = "Home">
+                <li id = "Home" class ="navLinks">
                     <a href = "#">Home</a>
                 </li>
-                <li id = "Logout">
+                <li id = "Logout" class ="navLinks">
                     <a href = "?a=Logout">Logout</a>
+                </li>
+                <li>
+                    <a href="#" class="toggleButton" alt="toggle-Button">
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                        <span class = "bar"></span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -39,6 +48,6 @@
 
     </body>
     <footer>
-        <script type="text/javascript" th:src="@{/JS/main.js}"></script>
+        <script type="text/javascript" th:src="@{/JS/main.js}" charset="utf-8"></script>
     </footer>
 </html>
