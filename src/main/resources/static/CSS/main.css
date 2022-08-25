@@ -35,6 +35,49 @@ nav ul li a:hover{
     border-color: white;
 }
 
+.navLinks{
+    margin:0;
+    padding: 0;
+    display: contents;
+}
+
+.toggleButton{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggleButton .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px){
+    .toggleButton{
+        display: flex;
+    }
+    .navLinks{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navLinks li{
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navLinks .active{
+        display: inline;
+    }
+}
  .StartPageContainer{
  	background-image: url('../Images/flushed-face_1f633.png');
  	width: auto;
