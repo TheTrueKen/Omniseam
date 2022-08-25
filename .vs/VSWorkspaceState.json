@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github\\workflows",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\com",
+    "\\src\\main\\java\\com\\kendev",
+    "\\src\\main\\java\\com\\kendev\\omniseam",
+    "\\src\\main\\java\\com\\kendev\\omniseam\\repository"
+  ],
+  "SelectedNode": "\\src\\main\\java\\com\\kendev\\omniseam\\repository\\UserRepository.java",
+  "PreviewInSolutionExplorer": false
+}
